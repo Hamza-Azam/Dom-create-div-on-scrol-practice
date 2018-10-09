@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+#myTag{
+    border: 2px solid red;
+    height: 100vh;
+}
+</style>
+</head>
+
+<body>
+    <div id="myTag">
+        <button id="butn" > click me</button>
+        <h4></h4>
+    </div>
+
+</body>
+<script>
+    // creatH1();
+    document.getElementById('butn').onclick = creatH1 ;
+    
+    document.body.onscroll = creatH1;
+
+    //function
+    function creatH1(){
+         var h1Tag = document.createElement('h1');
+    h1Tag.innerHTML = '<section>hello i am section inside h1</section>';
+    // document.body.appendChild(h1Tag);
+    myTag.insertBefore(h1Tag , document.querySelector('h4'));
+    } 
+
+
+    document.getElementById(sec) = innerText;
+
+</script>
+
+</html>
